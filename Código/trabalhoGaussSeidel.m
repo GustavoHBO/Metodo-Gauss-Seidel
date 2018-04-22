@@ -7,4 +7,4 @@ function [rx, tabela] = trabalhoGaussSeidel()
     [rx, tabela] = algoritmoGaussSeidel(matriz, precisao, qtMInteracao); % Computa o valor das incógnitas e retorna a tabela de interações.
     T = array2table(tabela, 'VariableNames',{'X','Y','Z','W','K'}) % Exibe a tabela formatada com a descrição da variável.
 
-    endtra
+    end
