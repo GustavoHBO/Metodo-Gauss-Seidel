@@ -1,10 +1,11 @@
-function [y, converge] =convergenciaCriterioDasLinhas(matriz, tamanho)
+function [y, converge] =convergenciaCriterioDasLinhas(matriz)
     format long g;
     i = 0;
     soma = 0;
-    for index = 1:tamanho
+    [ll,lc] = size(matriz);
+    for index = 1:ll
         soma = 0;
-        for index2 = 1:tamanho
+        for index2 = 1:ll
             if index ~= index2
                 soma = soma + abs(matriz(index, index2));
             end
